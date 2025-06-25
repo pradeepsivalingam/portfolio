@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-secondary {
+    @apply flex justify-between items-center px-3 py-5 text-white;
+    background: linear-gradient(90deg, #000000 0%, #06b6d4 100%);
+}
+.mobile-nav {
+  @apply fixed top-10 left-0 w-full h-1/3 bg-gray-200 shadow-md z-50 text-black;
+}
+
+.mobile-nav li{
+    @apply text-center h-full border-b border-gray-500 text-lg font-semibold;
+}
