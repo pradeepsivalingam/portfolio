@@ -5,7 +5,7 @@ export default function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return <header className="flex justify-between items-center px-3 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <Link className="font-bold text-lg" to="/">RESUME</Link>
+        <Link className="font-bold text-lg" to="/">PRADEEP RESUME</Link>
             <nav className="hidden md:block">
                 <ul className="flex space-x-16">
                     <li><Link to="/">Home</Link></li>
