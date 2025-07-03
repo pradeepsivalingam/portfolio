@@ -43,7 +43,7 @@ export default function Profile() {
               rel="noopener noreferrer"
               className="mb-4"
             >
-              <img src={profile.logo} alt={profile.name} className="w-22 h-22" />
+              <img src={profile.logo} alt={profile.name} className="w-20 h-20" />
             </a>
             <span className="text-lg font-medium text-center">{profile.name}</span>
           </div>
