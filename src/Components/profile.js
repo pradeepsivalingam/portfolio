@@ -31,7 +31,8 @@ export default function Profile() {
     <section className="py-12 bg-gray-100">
       <h2 className="text-3xl font-bold text-center mb-2">Profile</h2>
       <p className="text-xl text-center mb-8">My Profile</p>
-      <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div className="max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
         {profile.map((profile) => (
           <div
             key={profile.name}
