@@ -16,7 +16,7 @@ const profile = [
   },
   {
     name: "LinkedIn",
-    URL: "https://www.linkedin.com/in/pradeep-sivalingam-27147a229/",
+    URL: "https://www.linkedin.com/in/pradeep-s-27147a229/",
     logo: LinkedIn,
   },
   {
