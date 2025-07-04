@@ -1,6 +1,7 @@
 import React from 'react';
-
+import BgImage from '../assets/int.jpg'; // Background image
 const Contact = () => (
+    
     
     <div style={{
         maxWidth: '600px',
@@ -82,10 +83,8 @@ const Contact = () => (
 
 const App = () => (
     <section
-        className="py-12"
-        style={{
-            background: "bg-gray-100",
-        }}
+      className="py-12 bg-cover bg-center"
+      style={{ backgroundImage: `url(${BgImage})` }}
     >
         <Contact />
     </section>
