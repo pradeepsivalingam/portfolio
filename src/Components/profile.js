@@ -1,8 +1,13 @@
-import React from "react";
-import Instagram from "../assets/instagram.png"; 
-import LinkedIn from "../assets/linkedin.png"; 
+import React from 'react';
+import Instagram from "../assets/instagram.png";
+import LinkedIn from "../assets/linkedin.png";
 import GitHub from "../assets/github.jpeg";
 import Gmail from "../assets/gmail.png";
+import BgImage from "../assets/int.jpg"; // Background image
+
+// ----------------------------
+// Profile Data
+// ----------------------------
 const profile = [
   {
     name: "Instagram",
@@ -26,12 +31,18 @@ const profile = [
   },
 ];
 
-export default function Profile() {
+// ----------------------------
+// Profile Component
+// ----------------------------
+export function Profile() {
   return (
-    <section className="py-12 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-2">Profile</h2>
-      <p className="text-xl text-center mb-8">My Profile</p>
-      
+    <section
+      className="py-12 bg-cover bg-center"
+      style={{ backgroundImage: `url(${BgImage})` }}
+    >
+      <h2 className="text-3xl text-white font-bold text-center mb-2">Profile</h2>
+      <p className="text-xl text-white text-center mb-8">My Profile</p>
+
       <div className="max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
         {profile.map((profile) => (
           <div
@@ -44,12 +55,18 @@ export default function Profile() {
               rel="noopener noreferrer"
               className="mb-4"
             >
-              <img src={profile.logo} alt={profile.name} className="w-20 h-20" />
+              <img
+                src={profile.logo}
+                alt={`${profile.name} logo`}
+                className="w-20 h-20"
+              />
             </a>
             <span className="text-lg font-medium text-center">{profile.name}</span>
           </div>
+          
         ))}
       </div>
     </section>
   );
 }
+export default Profile;
