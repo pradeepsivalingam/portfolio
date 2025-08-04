@@ -3,11 +3,11 @@ import bgImage from '../assets/educ.png'; // ✅ Adjust path as needed
 
 const educationData = [
     {
-        institution: 'V.S.B College of engineering Technical Campus',
+        institution: 'V.S.B College of Engineering Technical Campus',
         degree: 'Bachelor of Engineering',
         stream: 'Computer Science and Engineering',
         year: '2021 - 2025',
-        details: 'Graduated with honors. Relevant coursework: Algorithms, Data Structures, Web Development.'
+        Details: 'Graduated with honors. Relevant coursework: Algorithms, Data Structures, Web Development.'
     },
     {
         institution: 'Govt Higher Secondary School, Krishnapuram',
@@ -18,7 +18,7 @@ const educationData = [
     {
         institution: 'Sri Ram Matric Higher Secondary School',
         degree: 'SSLC',
-        year: '2019 - 2020',
+        year: '2018 - 2019',
     },
 ];
 
